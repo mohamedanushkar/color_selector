@@ -33,9 +33,17 @@ const App = () => {
   return (
     <div className="AppMain">
       <div className="">
-        {colorbox.map ((colorsingle , id) => (
-          <Color key={id} id={id} onClick={deleteBox} bg={{backgroundColor: colorsingle.color , color: colorsingle.color}} />
-        ))}
+        {colorbox.length > 0 ? (
+          colorbox.map ((colorsingle , id) => (
+            <Color key={id} id={id} onClick={deleteBox} bg={{backgroundColor: colorsingle.color , color: colorsingle.color}} />
+          ))
+        ) : (
+          <div className="instruction">
+            <h1>Please click on colors to add </h1>
+          </div>
+        )
+        }        
+        {}
       </div>
       <div className="">
         {buttons.map ((button) => (

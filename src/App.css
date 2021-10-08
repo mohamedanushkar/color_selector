@@ -8,6 +8,7 @@
   flex-wrap: wrap;
   align-content: flex-start;
   margin-right: 5%;
+  border: 2px solid gray;
 }
 
 .Ball{
@@ -25,4 +26,12 @@ p {
     -webkit-filter: invert(100%);
     filter: invert(100%);
     pointer-events: none;
+}
+
+.instruction{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
