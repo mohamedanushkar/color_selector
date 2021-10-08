@@ -1,0 +1,28 @@
+.AppMain{
+  display: flex;
+}
+
+.AppMain > div:first-child{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-right: 5%;
+}
+
+.Ball{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+p { 
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    pointer-events: none;
+}
